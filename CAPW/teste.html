@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <label for="">digite seu nome</label>
+        <input type="text" id="nome">
+        <input type="text" id="idade">
+        <input type="text" id="sobre">
+        <button id="botao"> registrar</button>      
+        <h3 id="exibir_nome"></h3>
+        <h3 id="exibir_idade"></h3>
+        <h3 id="exibir_sobre"></h3>
+    
+    <script>
+        var botao = document.getElementById("botao");
+        botao.addEventListener("click", function () {
+        var inputnome = document.getElementById("nome").value;
+        var inputidade = document.getElementById("idade").value;
+        var inputsobre = document.getElementById("sobre").value;
+        var h3nome = document.getElementById("exibir_nome");
+        var h3idade = document.getElementById("exibir_idade");
+        var h3sobre = document.getElementById("exibir_sobre");
+    
+        h3nome.innerHTML = inputnome;
+        h3idade.innerHTML = inputidade;
+        h3sobre.innerHTML = inputsobre;
+      })
+    </script>
+</body>
+</html>
